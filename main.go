@@ -1,5 +1,6 @@
 package main
 
+import "os"
 import "fmt"
 import "lg/lgi"
 
@@ -8,5 +9,5 @@ import "lg/lgi"
 func main() {
 
 	lgi.InitSymbolTable()
-	fmt.Printf("%s\n", lgi.Parse())
+	fmt.Printf("%s\n", lgi.Parse(os.Stdin))
 }
